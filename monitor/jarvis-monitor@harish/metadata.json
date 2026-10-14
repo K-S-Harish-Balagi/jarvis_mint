@@ -1,0 +1,16 @@
+{
+    "uuid": "jarvis-monitor@harish",
+    "name": "Jarvis Monitor",
+    "description": "HUD-style system monitor: per-core CPU, RAM, SWAP, DISK, network, battery and auto-discovered storage volumes",
+    "icon": "utilities-system-monitor",
+    "author": "harish",
+    "version": "1.0",
+    "max-instances": 1,
+    "cinnamon-version": [
+        "6.0",
+        "6.2",
+        "6.4",
+        "6.6"
+    ],
+    "prevent-decorations": true
+}

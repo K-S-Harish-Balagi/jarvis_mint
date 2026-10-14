@@ -1,0 +1,143 @@
+/* Jarvis Drawer - values taken straight from page 12 of the Mint desktop
+   canvas so this is a replica, not an approximation. Colours are painted
+   here rather than inherited, so the shell theme (WhiteSur today) makes no
+   difference to how the drawer looks. */
+
+/* Frosted rather than flat: St has no backdrop blur, so the glass look comes
+   from a high-opacity tint over the wallpaper plus a lit top edge. Opaque
+   enough that icons and labels stay legible over any wallpaper. */
+.jarvis-drawer-root {
+    background-gradient-direction: vertical;
+    background-gradient-start: rgba(30, 30, 46, 0.93);
+    background-gradient-end: rgba(17, 17, 27, 0.97);
+    border: 1px solid rgba(205, 214, 244, 0.06);
+}
+
+/* search pill: 460 x 44, radius 22 */
+.jarvis-drawer-search {
+    background-color: rgba(49, 50, 68, 0.75);
+    border: 1px solid rgba(205, 214, 244, 0.12);
+    border-radius: 22px;
+    color: #cdd6f4;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    padding: 0 18px;
+    caret-color: #cba6f7;
+}
+
+.jarvis-drawer-search StLabel.hint-text {
+    color: #a6adc8;
+}
+
+/* chips: 32 tall, radius 16, 13px */
+.jarvis-drawer-chip {
+    background-color: rgba(49, 50, 68, 0.7);
+    border-radius: 16px;
+    color: #cdd6f4;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    height: 32px;
+    padding: 0 14px;
+}
+
+.jarvis-drawer-chip:hover {
+    background-color: rgba(69, 71, 90, 0.9);
+}
+
+.jarvis-drawer-chip-on {
+    background-color: #cba6f7;
+    border-radius: 16px;
+    color: #11111b;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    height: 32px;
+    padding: 0 14px;
+}
+
+/* tile: radius 18, padding 14 / 6 / 12 */
+.jarvis-drawer-tile {
+    border-radius: 18px;
+    padding: 14px 6px 12px;
+}
+
+.jarvis-drawer-tile-on {
+    background-color: rgba(203, 166, 247, 0.18);
+    border-radius: 18px;
+    padding: 14px 6px 12px;
+}
+
+.jarvis-drawer-label {
+    color: #cdd6f4;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+}
+
+.jarvis-drawer-empty {
+    color: #6c7086;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+}
+
+/* page dots - paged grid, no scrollbar */
+.jarvis-drawer-dot {
+    background-color: rgba(205, 214, 244, 0.25);
+    border-radius: 4px;
+    width: 8px;
+    height: 8px;
+}
+
+.jarvis-drawer-dot:hover {
+    background-color: rgba(205, 214, 244, 0.45);
+}
+
+.jarvis-drawer-dot-on {
+    background-color: #cba6f7;
+    border-radius: 4px;
+    width: 22px;      /* the board's active page marker is a pill, not a dot */
+    height: 8px;
+}
+
+/* session controls, right of the search pill */
+.jarvis-drawer-session,
+.jarvis-drawer-session-danger {
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    background-color: rgba(49, 50, 68, 0.75);
+    border: 1px solid rgba(205, 214, 244, 0.12);
+    color: #cdd6f4;
+}
+
+.jarvis-drawer-session:hover {
+    background-color: rgba(69, 71, 90, 0.95);
+    color: #cba6f7;
+}
+
+/* power off reads as the destructive one only on hover, so it does not shout */
+.jarvis-drawer-session-danger:hover {
+    background-color: rgba(243, 139, 168, 0.18);
+    color: #f38ba8;
+}
+
+/* close button - the mouse way out, since Super only toggles for the keyboard
+   and pushModal stops the panel icon from ever seeing a second click */
+.jarvis-drawer-close {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: rgba(49, 50, 68, 0.6);
+    border: 1px solid rgba(205, 214, 244, 0.10);
+    color: #a6adc8;
+}
+
+.jarvis-drawer-close:hover {
+    background-color: rgba(243, 139, 168, 0.18);
+    color: #f38ba8;
+    border: 1px solid rgba(243, 139, 168, 0.35);
+}
+
+.jarvis-drawer-close:focus {
+    border: 1px solid #cba6f7;
+    color: #cdd6f4;
+}

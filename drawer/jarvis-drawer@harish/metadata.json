@@ -1,0 +1,8 @@
+{
+    "uuid": "jarvis-drawer@harish",
+    "name": "Jarvis Drawer",
+    "description": "Full-screen app drawer matching the Mint desktop canvas (page 12): search on top, category chips, 6-column grid.",
+    "icon": "view-grid-symbolic",
+    "max-instances": "1",
+    "version": "1.0"
+}

@@ -1,0 +1,120 @@
+/* Catppuccin Mocha, matching page 11 of the Mint desktop canvas.
+   The earlier sci-fi HUD look (Rajdhani in wide-spaced caps, corner
+   brackets, grid) is gone: the approved design is soft rounded cards,
+   Inter for UI text and JetBrains Mono for figures, sentence case. */
+
+.jarvis-hud {
+    background-color: rgba(24, 24, 37, 0.88);
+    border: 1px solid rgba(205, 214, 244, 0.10);
+    border-radius: 18px;
+    padding: 16px 18px 14px;
+}
+
+.jarvis-title {
+    color: #cdd6f4;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.jarvis-subtitle {
+    color: #a6adc8;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+/* kept so the actor still resolves when effects are switched back on */
+.jarvis-bracket-bar {
+    background-color: rgba(203, 166, 247, 0.85);
+}
+
+.jarvis-section-title {
+    color: #a6adc8;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.jarvis-section-title-inline {
+    color: #a6adc8;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.jarvis-cpu-avg {
+    color: #cdd6f4;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.jarvis-divider {
+    background-color: rgba(205, 214, 244, 0.10);
+}
+
+.jarvis-net-label {
+    color: #a6adc8;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.jarvis-net-value {
+    color: #cdd6f4;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.jarvis-value {
+    color: #cdd6f4;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.jarvis-value-small {
+    color: #cdd6f4;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.jarvis-ring-label {
+    color: #cdd6f4;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.jarvis-detail {
+    color: #a6adc8;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+}
+
+.jarvis-storage-label {
+    color: #cdd6f4;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.jarvis-storage-percent {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.jarvis-storage-detail {
+    color: #a6adc8;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+}
+
+.jarvis-battery-text {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    font-weight: bold;
+}

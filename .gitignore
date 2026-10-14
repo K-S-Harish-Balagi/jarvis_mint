@@ -1,0 +1,4 @@
+packaging/dist/
+*.deb
+*.bak
+*~

@@ -1,0 +1,52 @@
+{
+  "accentColor": {
+    "type": "colorchooser",
+    "default": "#6fd0e8",
+    "description": "Accent color",
+    "tooltip": "Title text, brackets and network row use this color"
+  },
+  "showEffects": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show holographic grid, scanline and corner brackets"
+  },
+  "showBattery": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show battery indicator"
+  },
+  "showNetwork": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show network row"
+  },
+  "showZram": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show ZRAM ring"
+  },
+  "showGpu": {
+    "type": "checkbox",
+    "default": true,
+    "description": "Show GPU ring",
+    "tooltip": "Only takes effect if a supported GPU is found - the ring auto-hides regardless of this setting when it isn't"
+  },
+  "minDiskSizeGiB": {
+    "type": "spinbutton",
+    "default": 5,
+    "min": 0,
+    "max": 2000,
+    "step": 1,
+    "units": "GiB",
+    "description": "Minimum volume size to list under STORAGE"
+  },
+  "updateIntervalMs": {
+    "type": "spinbutton",
+    "default": 3000,
+    "min": 500,
+    "max": 10000,
+    "step": 500,
+    "units": "ms",
+    "description": "Refresh interval"
+  }
+}
